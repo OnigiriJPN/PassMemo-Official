@@ -30,6 +30,10 @@ body {
   margin: 20px;
   text-align: center;
 }
+body.mica-inactive .card {
+  backdrop-filter: blur(15px) saturate(50%);
+  background: rgba(255,255,255,0.03);
+}
 .page { display: none; animation: fadeIn 0.3s; }
 .page.active { display: block; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; }}
