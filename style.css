@@ -21,4 +21,11 @@ body {
   backdrop-filter: blur(15px);
 }
 .nav-tabs button { flex: 1; padding: 15px; border: none; background: none; color: white; }
-
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(25px);
+  border: var(--glass-border);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
