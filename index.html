@@ -21,7 +21,24 @@
         <small> タップ/クリックしてコピー </small>
       </div>
       <div class="card">
-        <select id
+        <select id="level" onchange="toggleCustom()" style="width:100%; padding:10px;">
+　　　　　　　<option value="strong">最強</option>
+           <option value="normal">普通</option>
+           <option value="custom">カスタム</option>
+        </select>
+        <div id="custom-options" style="display: none; margin-top: 10px;">
+           <input type="checkbox" id="useSym" checked> 記号
+          <input type="checkbox" id="useNum" checked> 数字
+          <input type="checkbox" id="useUpper" checked> 大文字
+          <input type="checkbox" id="useLower" checked> 小文字
+        </div>
+        <button class="action-btn" onclick="generate()" style="margin-top:15px;">生成する</button>
+      </div>
+    </main>
+    <main id="check-page" class="page">
+      <div class="card">
+        <input type="text" id="checkInput" placeholder="パスワードを入力" oninput="checkStrength()" style="width:90%; padding:10px; border-radius:8px;">
+        <div id="strengthMeter" style="margin-top:15px; font-weight:bold;">強さ : 未判定</div>
       </div>
     </main>
   </body>
